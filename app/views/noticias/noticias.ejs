@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+	<html lang="pt-br">
+		<head>
+			<meta charset="utf-8"/>
+			<title>Noticias</title>
+		</head>
+	<body>
+
+		<h1>Noticias</h1>
+
+		<table>
+			<tr>
+				<td>titulo</td>
+				<td>descricao</td>
+				<td>data</td>
+			</tr>
+
+			<!-- variavel JSON noticias da routes noticias.js -->
+			<%  for(var i=0; i < noticias.length; i++){  %>
+			<tr>
+				<td><%=  noticias[i].titulo %></td>
+				<td><%=  noticias[i].descricao %></td>
+				<td><%=  noticias[i].data %></td>
+			</tr>
+			<% } %>
+		</table>
+
+	</body>
+</html>
